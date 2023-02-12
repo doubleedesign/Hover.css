@@ -1,11 +1,11 @@
 /* Overline From Center */
-@mixin overline-from-center {
+@mixin overline-from-center($colour: $activeColor) {
 	$duration: $mediumDuration;
 
 	@include hacks();
 	position: relative;
 	overflow: hidden;
-	
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -13,7 +13,7 @@
 		left: 50%;
 		right: 50%;
 		top: 0;
-		background: $activeColor;
+		background: $colour;
 		height: 4px;
 		@include prefixed(transition-property, "left, right");
 		@include prefixed(transition-duration, $duration);

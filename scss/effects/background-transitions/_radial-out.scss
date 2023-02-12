@@ -1,5 +1,5 @@
 /* Radial Out */
-@mixin radial-out {
+@mixin radial-out($colour: $activeColor) {
 	@include hacks();
 	position: relative;
 	overflow: hidden;
@@ -15,7 +15,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: $activeColor;
+		background: $colour;
 		border-radius: 100%;
 		@include prefixed(transform, scale(0));
 		@include prefixed(transition-property, transform);

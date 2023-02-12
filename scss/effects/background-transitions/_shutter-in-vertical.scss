@@ -1,8 +1,8 @@
 /* Shutter In Vertical */
-@mixin shutter-in-vertical {
+@mixin shutter-in-vertical($colour: $activeColor) {
 	@include hacks();
 	position: relative;
-	background: $activeColor;
+	background: $colour;
 	@include prefixed(transition-property, color);
 	@include prefixed(transition-duration, $mediumDuration);
 

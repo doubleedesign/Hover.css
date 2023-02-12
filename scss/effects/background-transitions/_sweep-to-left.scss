@@ -1,5 +1,5 @@
 /* Sweep To Left */
-@mixin sweep-to-left {
+@mixin sweep-to-left($colour: $activeColor) {
 	@include hacks();
 	position: relative;
 	@include prefixed(transition-property, color);
@@ -13,7 +13,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: $activeColor;
+		background: $colour;
 		@include prefixed(transform, scaleX(0));
 		@include prefixed(transform-origin, 100% 50%);
 		@include prefixed(transition-property, transform);

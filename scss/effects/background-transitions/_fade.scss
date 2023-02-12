@@ -1,5 +1,5 @@
 /* Fade */
-@mixin fade {
+@mixin fade($colour: $activeColor) {
 	@include hacks();
 	overflow: hidden;
 	@include prefixed(transition-duration, $mediumDuration);
@@ -8,7 +8,7 @@
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: $activeColor;
+		background-color: $colour;
 		color: white;
 	}
 }

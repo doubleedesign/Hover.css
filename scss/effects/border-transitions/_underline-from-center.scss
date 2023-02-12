@@ -1,5 +1,5 @@
 /* Underline From Center */
-@mixin underline-from-center {
+@mixin underline-from-center($colour: $activeColor) {
 	$duration: $mediumDuration;
 
 	@include hacks();
@@ -13,7 +13,7 @@
 		left: 50%;
 		right: 50%;
 		bottom: 0;
-		background: $activeColor;
+		background: $colour;
 		height: 4px;
 		@include prefixed(transition-property, "left, right");
 		@include prefixed(transition-duration, $duration);

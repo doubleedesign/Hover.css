@@ -1,5 +1,5 @@
 /* Overline From Left */
-@mixin overline-from-left {
+@mixin overline-from-left($colour: $activeColor) {
 	$duration: $mediumDuration;
 
 	@include hacks();
@@ -13,7 +13,7 @@
 		left: 0;
 		right: 100%;
 		top: 0;
-		background: $activeColor;
+		background: $colour;
 		height: 4px;
 		@include prefixed(transition-property, "right");
 		@include prefixed(transition-duration, $duration);

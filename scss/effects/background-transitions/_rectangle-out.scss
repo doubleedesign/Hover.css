@@ -1,5 +1,5 @@
 /* Rectangle Out */
-@mixin rectangle-out {
+@mixin rectangle-out($colour: $activeColor) {
 	@include hacks();
 	position: relative;
 	background: $primaryColor;
@@ -14,7 +14,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: $activeColor;
+		background: $colour;
 		@include prefixed(transform, scale(0));
 		@include prefixed(transition-property, transform);
 		@include prefixed(transition-duration, $mediumDuration);

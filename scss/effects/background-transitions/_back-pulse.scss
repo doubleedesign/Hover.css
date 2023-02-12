@@ -5,7 +5,7 @@
 	}
 }
 
-@mixin back-pulse {
+@mixin back-pulse($colour: $activeColor) {
 	@include hacks();
 	overflow: hidden;
 	@include prefixed(transition-duration, $slowDuration);
@@ -19,7 +19,7 @@
 		@include prefixed(animation-delay, $slowDuration);
 		@include prefixed(animation-timing-function, linear);
 		@include prefixed(animation-iteration-count, infinite);
-		background-color: $activeColor;
+		background-color: $color;
 		background-color: rgba(32, 152, 209, 1);
 		color: white;
 	}
