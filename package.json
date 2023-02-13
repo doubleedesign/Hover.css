@@ -1,7 +1,7 @@
 {
-  "name": "hover.css",
-  "author": "Ian Lunn (original) / Leesa Ward (this fork)",
-  "version": "2.2.0a",
+  "name": "@doubleedesign/hover.scss",
+  "author": "Leesa Ward",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/doubleedesign/Hover.css"

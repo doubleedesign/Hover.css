@@ -12,8 +12,11 @@ $slowDuration: .5s !default;
 $primaryColor: #e1e1e1 !default;
 $secondaryColor: #666 !default;
 $highlightColor: #ccc !default;
-$activeColor: map-get($colours, 'accent') !default;
+$activeColor: #00c7b0 !default;
 $shadowColor: rgba(0, 0, 0, .6) !default;
+
+// Font Awesome
+$fa-default-weight: var(--fa-font-solid) !default;
 
 // Speech bubbles options
 $tipWidth: 10px !default;  //the width of the speech bubble tip
