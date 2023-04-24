@@ -1,5 +1,5 @@
 /* Shutter Out Horizontal */
-@mixin shutter-out-horizontal {
+@mixin shutter-out-horizontal($colour: $activeColor) {
 	@include hacks();
 	position: relative;
 	background: $primaryColor;
