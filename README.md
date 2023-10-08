@@ -9,7 +9,7 @@ For use in your own projects please ensure you have an appropriate [license from
 ```json5
 // In package.json
 "dependencies": {
-    "@doubleedesign/hover.scss": "https://github.com/doubleedesign/Hover.scss#1.0.1"
+    "@doubleedesign/hover.scss": "https://github.com/doubleedesign/Hover.scss#1.0.2"
 },
 ```
 ```scss
